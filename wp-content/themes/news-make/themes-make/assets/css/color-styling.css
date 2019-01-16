@@ -889,6 +889,11 @@ a:active {
 .footer .widget {
 	margin-bottom: 30px;
 }
+
+div#zoom-social-icons-widget-2 {
+    margin-left: 41%;
+    margin-bottom: 10px;
+}
 .footer .widget-info {
 	margin-bottom: 15px;
 }

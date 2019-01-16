@@ -412,7 +412,7 @@ if( ! function_exists( 'news_make_main_menu_action' ) ) :
 			<div class="menu-container clearfix">
 				<!-- Site Title in menu -->
 				<nav id="site-navigation" class="main-navigation" role="navigation">
-					<a class='navbar-brand' href="<?php echo esc_url( home_url( '/' ) ); ?>" itemprop='url'><span style="background: transparent url(https://lh5.googleusercontent.com/proxy/8pFzttS9q8jwN_vA-_u7dSEDH2WlAZ4SA2YSEgzGWiqmdYhUejwgcv-nKmpx1hlwrL8oTVz1DfK_daTeAt_it_MHRA42jmPHFk-6smvJ5LocCs-5Pw=s0-d) repeat scroll 0%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; color: white; text-shadow: red 0pt 0pt 0.3em, red 0pt 1pt 0.3em;"><i class='fa fa-star-o animated infinite pulse' style='color:red'></i> Nguyễn Hữu Nghĩa Blog <i class='fa fa-star-o animated infinite pulse' style='color:red'></i></span></a>
+					<a class='navbar-brand' href="<?php echo esc_url( home_url( '/' ) ); ?>" itemprop='url'><span style="background: transparent url(https://lh5.googleusercontent.com/proxy/8pFzttS9q8jwN_vA-_u7dSEDH2WlAZ4SA2YSEgzGWiqmdYhUejwgcv-nKmpx1hlwrL8oTVz1DfK_daTeAt_it_MHRA42jmPHFk-6smvJ5LocCs-5Pw=s0-d) repeat scroll 0%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; color: white; text-shadow: #0051ff 0pt 0pt 0.3em, #0051ff 0pt 1pt 0.3em;"><i class='fa fa-star-o animated infinite pulse' style='color:#0051ff'></i> Nguyễn Hữu Nghĩa Blog <i class='fa fa-star-o animated infinite pulse' style='color:#0051ff'></i></span></a>
 				<!-- Site Title in menu -->
                     <?php
                         wp_nav_menu(
@@ -689,17 +689,17 @@ if( ! function_exists( 'news_make_copyright_action' ) ) :
      * @since 1.0.0
      */
  	function news_make_copyright_action() {
- 		$copyright_text = news_make_get_option( 'news_make_copyright_text' );
+ 		$copyright_text = "Blog tại WordPress.com.";
  		?>
-		<div class="col-md-6">
-			<div class="copyright-container">
+		<div class="col-md-6" style="margin-left: 44%">
+			<div class="copyright-container" >
 				<?php
 					if( !empty( $copyright_text ) ) :
                     	?>
-                        <h5 class="copyright-text">
+                        <h5 class="copyright-text" >
                         	<?php 
                                 /* translators: theme credit info */
-                                printf( esc_html__( '%1$s %2$s by %3$s', 'news-make' ), $copyright_text, 'News Make', '<a href="' . esc_url( 'https://themesmake.com' ) . '" rel="designer">Themes Make</a>' );
+                                printf('<a href="' . esc_url( 'https://wordpress.com/' ) . '">Blog tại WordPress</a>');
                             ?> 
                         </h5>
                         <?php
@@ -708,7 +708,7 @@ if( ! function_exists( 'news_make_copyright_action' ) ) :
                         <h5 class="copyright-text">
                         	<?php 
                                 /* translators: theme credit info */
-                                printf( esc_html__( '%1$s by %2$s', 'news-make' ), 'News Make', '<a href="' . esc_url( 'https://themesmake.com' ) . '" rel="designer">Themes Make</a>' );
+                                 printf('<a href="' . esc_url( 'https://wordpress.com/' ) . '">Blog tại WordPress</a>');
                             ?> 
                         </h5>
                         <?php

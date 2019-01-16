@@ -1417,6 +1417,10 @@ ol {
   margin-top: 0;
   margin-bottom: 10px;
 }
+
+ul.wpp-list.wpp-list-with-thumbnails {
+    margin-left: -10%;
+}
 ul ul,
 ol ul,
 ul ol,
